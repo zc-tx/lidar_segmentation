@@ -7,9 +7,9 @@ project(lidar_segmentation)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   sensor_msgs
-	visualization_msgs
-	geometry_msgs
-	cmake_modules
+  visualization_msgs
+  geometry_msgs
+  cmake_modules
 )
 
 ## System dependencies are found with CMake's conventions
@@ -133,7 +133,7 @@ include_directories(
 ## Declare a C++ executable
 add_executable(lidar_segmentation_node 
 	src/lidar_segmentation_node.cpp
-	src/LidarSegment.cc
+	src/LidarSegment2d.cc
 )
 
 ## Add cmake target dependencies of the executable
